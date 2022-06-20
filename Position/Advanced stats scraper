@@ -33,3 +33,4 @@ for year in years:
     
     positions.to_csv("positions.csv", encoding="utf-8")
     
+    positions[positions['Rk'] != 'Rk'][['Rk','Player', 'Pos', 'PG%','SG%', 'SF%','PF%','C%']].to_csv("filteredPositions.csv")
